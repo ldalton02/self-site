@@ -1,0 +1,156 @@
+
+.topbar{
+    margin: -8px;
+    padding: 0px;
+    overflow:hidden;
+    display:block;
+    height: 100%;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+ 
+li {
+    float: left;
+    margin-top: 20px;
+}
+  
+li a {
+    font-size: 20px;
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    color:black;
+    text-decoration: none;
+   
+}
+  
+ /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    color:gray;
+    border:gray;
+}
+
+
+html, body{
+    background-color:black;
+    color:white;
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+    font-family: monospace;
+}
+
+.header-style {
+    background-image: url(background-pic2.jpg);
+    background-size: auto 100%;
+    height: 100%;
+    width:auto;
+}
+
+.first-section {
+    /* center vertically in both dirs*/
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+
+#main-name {
+    font-size: 75px;
+    color:white;
+    text-shadow: black;
+    text-align:center;
+    align-items: center;
+}
+
+
+.sub-text {
+    text-shadow: black;
+    margin: 2px;
+    font-size: 20px;
+    color:white;
+}
+
+
+
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap:unset;
+    flex-direction: row;
+}
+
+
+.one-third {
+    text-align:center;
+    width:calc(100%/3);
+  
+}
+
+.one-fifth {
+    width: 20%;
+    border:white;
+    border-style: solid;
+}
+
+.two-third {
+    text-align:center;
+    width: 50%;
+}
+
+
+.one-half {
+    width: 50%;
+}
+
+
+#about-me {
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+}
+
+#navbar {
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.flex-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+
+#fit-image {
+    width: calc(200%/3);
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px;
+    border-radius: 100%;
+}
+
+#description-text {
+
+}

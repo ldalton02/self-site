@@ -1,0 +1,192 @@
+/*IDS*/
+
+#main-name {
+    font-size: 10em;
+    color:black;
+    text-shadow: black;
+    text-align:center;
+    align-items: center;
+    margin: 0px;
+}
+
+#about-me {
+    color: purple;
+    font-size: 40px;
+    margin-top: 1em;
+}
+
+/* CLASSES*/
+
+
+/* FLEX CLASSES */
+.align-center { /* remmeber to put this on the right section, putting it in */
+    justify-items: center;
+    align-items:  center;
+}
+
+.flex-horizontal-center {
+    justify-content: center;
+}
+
+.flex-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+/* END FLEX CLASSES */ 
+
+/* HEADER */
+
+.header {
+    height: 100vh;
+    margin: 0 25vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-title {
+    text-align: center;
+}
+
+#my-picture {
+    border-radius: 1em;
+    height: 100%;
+}
+
+.self-image{
+    height: 40%   
+}
+
+/* END HEADER */
+
+
+/* NAVBAR */
+
+.my-navbar {
+    position: fixed;
+    width: 100%;
+    top:0;
+    display: flex;
+    align-items: center;
+    color:black;
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.navbar-name {
+    margin-left: 10em;
+    justify-self: left;
+}
+
+.navbar-item-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.navbar-item {
+    color: black;
+    font-variant: normal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.navbar-item:hover {
+    color: purple;
+}
+
+
+
+
+/* END NAVBAR */
+
+html, body{
+    background-color:white;
+    color:black;
+    margin: 0;
+    height:100%;
+    width:100%;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+.sub-main-name {
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+}
+
+#about-section {
+    height: 90vh;
+    margin: 0 25vw;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-items: end;
+    justify-items: center;
+}
+
+#about-picture-row {
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 5em 0;
+    width: 100%;
+}
+
+.self-description {
+    height: 100%;
+    padding: 0 2em;
+}
+
+#experience-section {
+    background-color: white;
+    color:black;
+    padding: 0 25vw;
+}
+
+.experience-table {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.experience-title {
+    grid-column: 1;
+}
+
+.experience-description {
+    grid-column: 2;
+}
+
+/*  SKILL SECTION  */
+
+.skills-container {
+    height: 50vh;
+    margin: 0 25vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items:center;
+    gap: 10vw;
+}
+
+/* END SKILLS SECTION */
+
+.progress-bar {
+    transition-duration: 2s;
+}
