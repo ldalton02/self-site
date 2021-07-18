@@ -2,26 +2,33 @@
 
 #main-name {
     font-size: 10em;
-    color:black;
+    color: black;
     text-shadow: black;
-    text-align:center;
+    text-align: center;
     align-items: center;
     margin: 0px;
 }
 
-#about-me {
-    color: purple;
-    font-size: 40px;
-    margin-top: 1em;
-}
 
+#my-name {
+    white-space:pre-wrap;
+}
 /* CLASSES*/
+
+.typed-cursor {
+    font-size: 30px;
+    height: 100%;
+    padding-bottom: 10px;;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
 
 
 /* FLEX CLASSES */
-.align-center { /* remmeber to put this on the right section, putting it in */
+.align-center {
+    /* remmeber to put this on the right section, putting it in */
     justify-items: center;
-    align-items:  center;
+    align-items: center;
 }
 
 .flex-horizontal-center {
@@ -41,20 +48,28 @@
     flex-direction: row;
 }
 
-/* END FLEX CLASSES */ 
+/* END FLEX CLASSES */
 
 /* HEADER */
+
+.text-slider {
+    width: 500px;
+}
 
 .header {
     height: 100vh;
     margin: 0 25vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.header-title {
+.header-name {
+    
+}
+
+.header-h1 {
     text-align: center;
 }
 
@@ -63,8 +78,8 @@
     height: 100%;
 }
 
-.self-image{
-    height: 40%   
+.self-image {
+    height: 40%
 }
 
 /* END HEADER */
@@ -75,10 +90,10 @@
 .my-navbar {
     position: fixed;
     width: 100%;
-    top:0;
+    top: 0;
     display: flex;
     align-items: center;
-    color:black;
+    color: black;
     backdrop-filter: blur(2px);
     z-index: 1;
 }
@@ -108,17 +123,22 @@
 }
 
 
+.nav-item {
+    color: purple;
+}
+
 
 
 /* END NAVBAR */
 
-html, body{
-    background-color:white;
-    color:black;
+body {
+    position: relative;
+    background-color: white;
+    color: black;
     margin: 0;
-    height:100%;
-    width:100%;
-    padding:0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -129,21 +149,33 @@ html, body{
 }
 
 #about-section {
-    height: 90vh;
+    min-height: 100vh;
     margin: 0 25vw;
-    display: grid;
-    grid-template-rows: auto auto;
-    align-items: end;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     justify-items: center;
+    text-align: center;
 }
 
-#about-picture-row {
-    height: auto;
-    justify-items: center;
-    align-items: center;
-    margin: 5em 0;
-    width: 100%;
+#about-me {
+    font-size: 40px;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
 }
+
+
+
+.self-picture-container {
+    object-fit: cover;
+}
+
+#my-picture {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 
 .self-description {
     height: 100%;
@@ -151,18 +183,20 @@ html, body{
 }
 
 #experience-section {
+    min-height: 100vh;
     background-color: white;
-    color:black;
+    color: black;
     padding: 0 25vw;
+    /**/
+    display: flex;
+    flex-direction: column;
 }
 
-.experience-table {
+.experience-cards {
+    padding: 1em 0;
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 100%;
-    justify-items: center;
-    align-items: center;
+    grid-template-rows: min-content;
+    grid-gap: 1.5em 0;
 }
 
 .experience-title {
@@ -175,18 +209,81 @@ html, body{
 
 /*  SKILL SECTION  */
 
-.skills-container {
-    height: 50vh;
+#skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     margin: 0 25vw;
+}
+
+.skills-container {
+    width: 100%;
+    height: 50vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    align-items:center;
-    gap: 10vw;
+    grid-template-columns: 50% 50%;
+}
+
+.skills-description {
+    grid-column: 1;
+}
+
+.skills-visual {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills-title {
+    margin: 5% 0;
 }
 
 /* END SKILLS SECTION */
 
 .progress-bar {
-    transition-duration: 2s;
+    transition-duration: 3s;
 }
+
+
+#contact-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+#typing-text {
+    border-right: solid 3px;
+    color: black(255,255,255,.70);
+    overflow: hidden;
+    animation: animated-text 2s steps(12, end) 0.75s 1 normal both,
+        animated-cursor 600ms steps(29, end) infinite;
+}
+
+  .button-container {
+      justify-content: center;
+      margin: 1em 0;
+  }
+
+  /*  working on button component here*/
+  
+  .button-class {
+      background-color: gray;
+      height: 100%;
+      margin: 0;
+      padding: 0.25em 2em;
+      border-radius: 1em;
+      border: 1px solid black;
+  }
+
+  .button-class:hover {
+      background-color: rgb(97, 96, 96);
+  }
+
+
+  .top-title {
+      margin-top: 1.5em;
+      text-align: center;
+  }
