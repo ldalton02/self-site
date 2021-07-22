@@ -1,3 +1,25 @@
+
+
+
+
+
+
+
+
+
+
+.box-container {
+    border: 1px solid black;
+    border-radius: 0.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+    margin: 5em 0;
+}
+
 /*IDS*/
 
 #main-name {
@@ -11,14 +33,16 @@
 
 
 #my-name {
-    white-space:pre-wrap;
+    white-space: pre-wrap;
 }
+
 /* CLASSES*/
 
 .typed-cursor {
     font-size: 30px;
     height: 100%;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
+    ;
     -webkit-animation: typedjsBlink 0.7s infinite;
     animation: typedjsBlink 0.7s infinite;
 }
@@ -65,9 +89,7 @@
     justify-content: center;
 }
 
-.header-name {
-    
-}
+.header-name {}
 
 .header-h1 {
     text-align: center;
@@ -133,8 +155,7 @@
 
 body {
     position: relative;
-    background-color: white;
-    color: black;
+    color: transparent;
     margin: 0;
     height: 100%;
     width: 100%;
@@ -149,7 +170,7 @@ body {
 }
 
 #about-section {
-    min-height: 100vh;
+    min-height: 80vh;
     margin: 0 25vw;
     display: flex;
     flex-direction: column;
@@ -157,7 +178,6 @@ body {
     justify-items: center;
     text-align: center;
 }
-
 #about-me {
     font-size: 40px;
     margin-top: 1.5em;
@@ -183,7 +203,7 @@ body {
 }
 
 #experience-section {
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: white;
     color: black;
     padding: 0 25vw;
@@ -214,7 +234,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 80vh;
     margin: 0 25vw;
 }
 
@@ -223,6 +243,8 @@ body {
     height: 50vh;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-gap: 0 1em;
+    align-items: center;
 }
 
 .skills-description {
@@ -256,34 +278,30 @@ body {
 
 #typing-text {
     border-right: solid 3px;
-    color: black(255,255,255,.70);
+    color: black(255, 255, 255, .70);
     overflow: hidden;
     animation: animated-text 2s steps(12, end) 0.75s 1 normal both,
         animated-cursor 600ms steps(29, end) infinite;
 }
 
-  .button-container {
-      justify-content: center;
-      margin: 1em 0;
-  }
+.button-container {
+    justify-content: center;
+    margin: 1em 0;
+}
 
-  /*  working on button component here*/
-  
-  .button-class {
-      background-color: gray;
-      height: 100%;
-      margin: 0;
-      padding: 0.25em 2em;
-      border-radius: 1em;
-      border: 1px solid black;
-  }
-
-  .button-class:hover {
-      background-color: rgb(97, 96, 96);
-  }
+/*  working on button component here*/
 
 
-  .top-title {
-      margin-top: 1.5em;
-      text-align: center;
-  }
+
+.top-title {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+/*
+  to-do
+    media query
+    remove 25vw margins at width less than 800 pixels?
+
+
+  */
