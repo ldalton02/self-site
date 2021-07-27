@@ -1,0 +1,106 @@
+@import '_variables.scss';
+
+body {
+    background-color: #0B0C10 !important;
+    color: #C5C6C7 !important;
+    position: relative;
+}
+
+html {
+    //background-color: #0B0C10;
+}
+
+h1, h5 {
+    color: #d7ab6c !important;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 0 20vw;
+    min-height: 100vh;
+}
+
+.header-h1 {
+    font-size: 4em;
+}
+
+.my-button {
+    color: #C5C6C7 !important;
+}
+
+hr {
+    color: #C5C6C7 !important;
+}
+
+#about-me {
+    min-height: 100vh;
+    margin: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#picture-section {
+    display: grid;
+    grid-gap: 1em;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 0 10vw;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 65% 35%;
+}
+
+.about-label {
+    color: #d7ab6c !important;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+.border-custom img {
+    transition: .5s ease;
+}
+
+.border-custom img:hover {
+    box-shadow: 6px 6px #d7ab6c;
+    transition: .5s ease;
+}
+
+.self-picture-container {
+    margin: 1em;
+    object-fit: cover;
+}
+#my-picture {
+    border-radius: 1em;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#skills-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-visual {
+    margin: 1em 10em;
+}
+
+#experience-section {
+    min-height: 100vh;
+    margin: 0 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3em 0;
+}

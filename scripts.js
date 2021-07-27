@@ -36,7 +36,4 @@ $(document).ready(function () {
     startDelay: 1000,
   });
 
-
-
-
 });
