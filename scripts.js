@@ -5,7 +5,13 @@ const snapLoad = (element) => {
 
 const bars = $('.progress-bar');
 
-$(document).ready(function(){
+$(document).ready(function () {
+
+
+
+  $('body').scrollspy({
+    target: '.navbar'
+  })
 
   /// observer to fill the percentage of the skills bars
   observer = new IntersectionObserver((entries, observer) => {
@@ -16,8 +22,10 @@ $(document).ready(function(){
         observer.unobserve(current.target);
       }
     })
-  }, {threshold: [1.0]});
-  
+  }, {
+    threshold: [1.0]
+  });
+
   const allSections = document.querySelectorAll('.progress-bar');
 
   allSections.forEach(section => {
@@ -25,26 +33,45 @@ $(document).ready(function(){
   });
 
 
-  // observer to change color of page depending upon which section youre on
-  $(document).scroll(function() {
-    var scroll_top = $(document).scrollTop();
-    var div_one_top = $('#about-section').position().top;
-    var div_two_top = $('#experience-section').position().top;
+  var typed = new Typed(".text-slider", {
+    strings: ['Luke Dalton.'],
+    typeSpeed: 40,
+    startDelay: 1000,
+  });
 
-  
-    if(scroll_top > div_one_top && scroll_top < div_two_top) {
-        //You are now past div one
-        $('#about-nav').text("gay");
-        console.log("about-section");
-    } else if( scroll_top > div_two_top) {
-        //You are now past div two
-       $('#sidebar').text('Two');
-       console.log('sidebar-section');
+  document.getElementById('contact-button-top').addEventListener('click', function () {
+    document.getElementById('contact-page').scrollIntoView();
+  })
+
+
+  document.getElementById('email-button').addEventListener('click', function () {
+    window.open('mailto:lukedalton221@gmail.com');
+  })
+
+  document.getElementById('linkedin-button').addEventListener('click', function () {
+    window.open('https://www.linkedin.com/in/luke-dalton-195996209/');
+  })
+
+  document.getElementById('github-button').addEventListener('click', function () {
+    window.open('https://github.com/ldalton02');
+  })
+
+});
+
+
+/*
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
     }
-});
-  
-});
-
-
-
-
+  });
+}
+*/
