@@ -6,7 +6,9 @@ const snapLoad = (element) => {
 const bars = $('.progress-bar');
 
 $(document).ready(function () {
-  console.log('hello');
+
+
+
   $('body').scrollspy({
     target: '.navbar'
   })
@@ -37,23 +39,13 @@ $(document).ready(function () {
     startDelay: 1000,
   });
 
-  var button = document.getElementsByClassName('collapsible');
-  for (each in button) {
-    each.onclick = function() {
-      let content = document.getElementById('collapsible1');
-      content.style.display = 'block';
-      let height = content.scrollHeight + 'px';
-      this.classList.toggle('active');
-      if (content.classList.contains('is-visible')) {
-        content.classList.remove('is-visible');
-      } else {
-        content.classList.add('is-visible');
-      }
-    }
-  }
-  
-
-
+  var contactButton =  document.getElementById('contact-button-top');
+  contactButton.addEventListener('click', function() {
+    var scrollTo = document.getElementById(
+      'contact-page'
+    );
+    $('contact-page').scrollTo();
+    })
 
 });
 

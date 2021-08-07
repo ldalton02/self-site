@@ -1,13 +1,19 @@
+$secondary-gold: #d7ab6c;
+$secondary-gray: $secondary-gray;
+$primary-black: #0B0C10;
+
+
+
 body {
-    background-color: #0B0C10 !important;
-    color: #C5C6C7 !important;
+    background-color: $primary-black !important;
+    color: $secondary-gray !important;
     position: relative;
     padding: 0 20vw;
 }
 
 @media screen and (max-width: 600px) {
     body {
-        padding: 0;
+        padding: 0 2em;
     }
 
     .header {
@@ -15,14 +21,22 @@ body {
     }
 
     .experience-inner-grid {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #picture-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 h1,
 h5 {
-    color: #d7ab6c !important;
+    color: $secondary-gold !important;
 }
 
 .header {
@@ -38,11 +52,11 @@ h5 {
 }
 
 .my-button {
-    color: #C5C6C7 !important;
+    color: $secondary-gray !important;
 }
 
 hr {
-    color: #C5C6C7 !important;
+    color: $secondary-gray !important;
 }
 
 #about-me {
@@ -54,15 +68,21 @@ hr {
 }
 
 #picture-section {
-    display: grid;
-    grid-gap: 1em;
     width: 100%;
     margin-bottom: 2em;
-    padding: 0 10vw;
-    align-items: center;
+}
+
+@media (min-width: 600px) {
+    #picture-section {
+        display: grid;
+        grid-gap: 1em;
+        padding: 0 10vw;
+        align-items: center;
     justify-items: center;
     grid-template-columns: 65% 35%;
+    }
 }
+
 
 .about-label {
     color: #d7ab6c !important;
@@ -70,7 +90,17 @@ hr {
     margin-bottom: 1em;
 }
 
-p {
+.about-footer {
+    margin: 2em 0;
+    padding: 0 10vw;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+p, li {
     font-size: 18px;
 }
 
@@ -106,7 +136,6 @@ p {
 }
 
 #experience-section {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,12 +149,13 @@ p {
 }
 
 .experience-annotation {
-    border-right: 1px solid #C5C6C7
+    border-right: 1px solid $secondary-gray
 }
 
 .experience-card {
-    margin: 2em 3em;
-    padding: 0;
+    display: grid;
+    align-items: center;
+    margin: 2em 0;
     width: 100%;
 }
 
@@ -237,4 +267,49 @@ a {
         right: auto;
         width: 100%;
     }
+}
+
+
+#contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3em 0;
+}
+
+.contact-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 2em 0;
+}
+
+#two-buttons {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid $secondary-gray;
+    padding: 0.5em 2.5em;
+    border-radius: 0.5em !important;
+    color: $secondary-gray;
+    transition: 0.25s;
+    &:hover {
+        border: 1px solid #d7ab6c;
+        color:#d7ab6c;
+    }
+}
+
+
+.button-raise {
+    margin: 0;
+}
+.button-raise:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #d7ab6c;
+  transform: translateY(-0.25em);
 }
