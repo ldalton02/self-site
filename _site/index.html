@@ -7,26 +7,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/css/main.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" data-bs-method="offset">
   <div>
-    <nav id="navbar-example2" class="navbar px-3 fixed-top" style="backdrop-filter: blur(2px);">
-    <a class="navbar-brand" href="#">Luke Dalton</a>
-    <ul class="nav nav-pills" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link" href="#about-me">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#experience-section">Experience</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#contact-page">Contact Me</a>
-        </li>
-    </ul>
-</nav>
+    <div id="navbar">
+    <h5 class="nav-title">Luke Dalton</h5>
+    <div class="navbar-links">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
 
     <div id="header-section" class="header">
     <h1> Hello! </h1>
@@ -42,7 +36,7 @@
         </p>
     </div>
     <div>
-        <button href="#experience-section"class="button-raise" id="contact-button-top" type="button">
+        <button class="button-raise" id="contact-button-top" type="button">
             Contact Me 
         </button>
     </div>
@@ -242,7 +236,7 @@
         <p>
             Email me at <a class="underline">lukedalton221@gmail.com</a>
         </p>
-        <button class="button-raise" type="button">
+        <button class="button-raise" type="button" id='email-button'>
             Email 
         </button>
     </div>
@@ -252,10 +246,10 @@
     </p>
 
     <div id="two-buttons">
-        <button class="button-raise" type="button">
+        <button class="button-raise bottom-contact-buttons" id='github-button' type="button">
             Github 
         </button>
-        <button class="button-raise" type="button">
+        <button class="button-raise bottom-contact-buttons" id='linkedin-button' type="button">
             LinkedIn
         </button>
     </div>

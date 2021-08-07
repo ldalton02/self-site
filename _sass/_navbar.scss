@@ -1,0 +1,35 @@
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* Navbar links */
+#navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    margin: 0.5em 1em;
+    padding: 0.5em 0.8em;
+    border-radius: 0.5em;
+}
+
+.current-spy {
+    background-color: $secondary-gray;
+}
+
+.navbar-links {
+    justify-self: right;
+    display: block;
+    margin: 0 1em;
+}
+
+.nav-title {
+    margin: 0.5em;
+    align-self: left;
+}

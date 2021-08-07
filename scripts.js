@@ -39,13 +39,22 @@ $(document).ready(function () {
     startDelay: 1000,
   });
 
-  var contactButton =  document.getElementById('contact-button-top');
-  contactButton.addEventListener('click', function() {
-    var scrollTo = document.getElementById(
-      'contact-page'
-    );
-    $('contact-page').scrollTo();
-    })
+  document.getElementById('contact-button-top').addEventListener('click', function () {
+    document.getElementById('contact-page').scrollIntoView();
+  })
+
+
+  document.getElementById('email-button').addEventListener('click', function () {
+    window.open('mailto:lukedalton221@gmail.com');
+  })
+
+  document.getElementById('linkedin-button').addEventListener('click', function () {
+    window.open('https://www.linkedin.com/in/luke-dalton-195996209/');
+  })
+
+  document.getElementById('github-button').addEventListener('click', function () {
+    window.open('https://github.com/ldalton02');
+  })
 
 });
 

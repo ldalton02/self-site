@@ -1,23 +1,16 @@
-$secondary-gold: #d7ab6c;
-$secondary-gray: $secondary-gray;
-$primary-black: #0B0C10;
-
-
-
+---
+---
+@import 'variables';
+@import 'navbar';
 body {
     background-color: $primary-black !important;
     color: $secondary-gray !important;
     position: relative;
-    padding: 0 20vw;
 }
 
 @media screen and (max-width: 600px) {
     body {
         padding: 0 2em;
-    }
-
-    .header {
-        margin-left: 3em;
     }
 
     .experience-inner-grid {
@@ -45,6 +38,7 @@ h5 {
     align-items: left;
     justify-content: center;
     min-height: 100vh;
+    padding: 0 20vw;
 }
 
 .header-h1 {
@@ -65,6 +59,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding: 0 20vw;
 }
 
 #picture-section {
@@ -140,7 +135,7 @@ p, li {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 3em 0;
+    padding: 3em 20vw;
 }
 
 .experience-inner-grid {
@@ -149,7 +144,7 @@ p, li {
 }
 
 .experience-annotation {
-    border-right: 1px solid $secondary-gray
+    border-right: 1px solid $secondary-gray;
 }
 
 .experience-card {
@@ -289,7 +284,7 @@ a {
 #two-buttons {
     display: flex;
     flex-direction: row;   
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 button {
@@ -312,4 +307,8 @@ button {
 .button-raise:hover {
   box-shadow: 0 0.5em 0.5em -0.4em #d7ab6c;
   transform: translateY(-0.25em);
+}
+
+.bottom-contact-buttons {
+    margin: 0 1em;
 }
