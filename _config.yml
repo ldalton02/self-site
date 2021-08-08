@@ -1,5 +1,8 @@
 lsi: false
 safe: true
+baseurl: /PROJECT
+url: http://ldalton02.github.io/self-site/
+root: /
 incremental: false
 highlighter: rouge
 gist:
