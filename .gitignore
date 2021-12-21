@@ -1,2 +1,5 @@
 *.css
 
+_config.yml
+
+/_site

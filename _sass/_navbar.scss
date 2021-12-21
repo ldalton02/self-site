@@ -1,12 +1,21 @@
 /* Style the navbar */
 #navbar {
     overflow: hidden;
-    background: transparent;
+    
+    -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
     position: fixed;
     top: 0;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
+}
+
+
+@media (max-width: 600px) {
+    #navbar {
+        display: none;
+    }
 }
 
 /* Navbar links */

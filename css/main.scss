@@ -1,7 +1,9 @@
----
----
+--- 
+--- 
 @import 'variables';
 @import 'navbar';
+@import 'projects';
+
 body {
     background-color: $primary-black !important;
     color: $secondary-gray !important;
@@ -19,6 +21,7 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     #picture-section {
         display: flex;
         flex-direction: column;
@@ -39,6 +42,12 @@ h5 {
     justify-content: center;
     min-height: 100vh;
     padding: 0 20vw;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0 3vw;
+    }
 }
 
 .header-h1 {
@@ -62,6 +71,12 @@ hr {
     padding: 0 20vw;
 }
 
+@media (max-width: 600px) {
+    #about-me {
+        padding: 0 3vw;
+    }
+}
+
 #picture-section {
     width: 100%;
     margin-bottom: 2em;
@@ -73,8 +88,8 @@ hr {
         grid-gap: 1em;
         padding: 0 10vw;
         align-items: center;
-    justify-items: center;
-    grid-template-columns: 65% 35%;
+        justify-items: center;
+        grid-template-columns: 65% 35%;
     }
 }
 
@@ -95,7 +110,14 @@ hr {
     justify-content: left;
 }
 
-p, li {
+@media (max-width: 600px) {
+    .about-footer {
+        padding: 0;
+    }
+}
+
+p,
+li {
     font-size: 18px;
 }
 
@@ -130,12 +152,24 @@ p, li {
     margin: 1em 10em;
 }
 
+@media (max-width: 600px) {
+    .skills-visual {
+        margin: 1em 1em;
+    }
+}
+
 #experience-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 3em 20vw;
+}
+
+@media (max-width: 600px) {
+    #experience-section {
+        padding: 3em 3vw;
+    }
 }
 
 .experience-inner-grid {
@@ -283,7 +317,7 @@ a {
 
 #two-buttons {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -294,9 +328,10 @@ button {
     border-radius: 0.5em !important;
     color: $secondary-gray;
     transition: 0.25s;
+
     &:hover {
         border: 1px solid #d7ab6c;
-        color:#d7ab6c;
+        color: #d7ab6c;
     }
 }
 
@@ -304,9 +339,10 @@ button {
 .button-raise {
     margin: 0;
 }
+
 .button-raise:hover {
-  box-shadow: 0 0.5em 0.5em -0.4em #d7ab6c;
-  transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 0.5em -0.4em #d7ab6c;
+    transform: translateY(-0.25em);
 }
 
 .bottom-contact-buttons {
