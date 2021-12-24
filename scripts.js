@@ -6,9 +6,6 @@ const snapLoad = (element) => {
 const bars = $('.progress-bar');
 
 $(document).ready(function () {
-
-
-
   $('body').scrollspy({
     target: '.navbar'
   })
@@ -32,7 +29,6 @@ $(document).ready(function () {
     observer.observe(section);
   });
 
-
   var typed = new Typed(".text-slider", {
     strings: ['Luke Dalton.'],
     typeSpeed: 40,
@@ -42,7 +38,6 @@ $(document).ready(function () {
   document.getElementById('contact-button-top').addEventListener('click', function () {
     document.getElementById('contact-page').scrollIntoView();
   })
-
 
   document.getElementById('email-button').addEventListener('click', function () {
     window.open('mailto:lukedalton221@gmail.com');
@@ -57,21 +52,3 @@ $(document).ready(function () {
   })
 
 });
-
-
-/*
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight) {
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-*/
