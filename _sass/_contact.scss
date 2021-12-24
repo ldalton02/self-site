@@ -1,0 +1,22 @@
+
+.contact-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 2em 0;
+}
+
+#two-buttons {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-evenly;
+}
+
+#contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3vh 0
+}

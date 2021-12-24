@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-baseurl: /project
+baseurl: /
 url: http://ldalton02.github.io/self-site/
 incremental: false
 highlighter: rouge

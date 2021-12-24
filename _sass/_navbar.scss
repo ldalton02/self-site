@@ -7,6 +7,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: auto auto;
+    backdrop-filter: blur(5px);
 }
 
 /* Navbar links */
@@ -19,10 +20,6 @@
     border-radius: 0.5em;
 }
 
-.current-spy {
-    background-color: $secondary-gray;
-}
-
 .navbar-links {
     justify-self: right;
     display: block;
@@ -32,4 +29,10 @@
 .nav-title {
     margin: 0.5em;
     align-self: left;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-links {
+        display: none;
+    }
 }
