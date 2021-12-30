@@ -20,3 +20,12 @@
     justify-content: flex-start;
     padding: 3vh 0
 }
+
+
+//media query for other classes = ?
+
+@media screen and (max-width: 600px) {
+    #contact-page {
+        padding: 3vh 5vw;
+    }
+}
